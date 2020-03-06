@@ -42,7 +42,7 @@ namespace WordCounter.Models
     public void SentenceWordCount(string word, string sentence)
     {
       List <string> words = new List<string> {};
-      string[] sentenceArr = sentence.Split(',');
+      string[] sentenceArr = sentence.Split(' ');
 
       for (var i = 0; i < sentenceArr.Length; i++)
       {
