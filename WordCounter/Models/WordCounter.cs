@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -37,11 +38,30 @@ namespace WordCounter.Models
       }
     }
 
-    // public int SentenceWordCount(string word, string sentence)
-    // {
+
+    public void SentenceWordCount(string word, string sentence)
+    {
+      List <string> words = new List<string> {};
+      string[] sentenceArr = sentence.Split(',');
+
+      for (var i = 0; i < sentenceArr.Length; i++)
+      {
+        if (sentenceArr[i] == word)
+        {
+          words.Add(sentenceArr[i]);
+        }
+        else{
+          words.Add("");
+        }
+      }
+      Console.WriteLine(words.Count());
+
+
+      // int count = sentenceArr.Count(word);
+      // Console.WriteLine(count);
       
 
-    // }
+    }
     
   }
 
