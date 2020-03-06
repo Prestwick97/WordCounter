@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-// using System.Diagnostics;
 
 
 namespace WordCounter.Models
@@ -9,6 +8,10 @@ namespace WordCounter.Models
 
   public class WordCount
   {
+    public string InputWord {get; set;}
+    public string InputSentence {get; set;}
+ 
+
     public bool LetterCheck(string input)
     {
       bool outcome = Regex.IsMatch(input, @"^[a-zA-Z]+$");
@@ -22,4 +25,5 @@ namespace WordCounter.Models
       }
     }
   }
+
 }    
