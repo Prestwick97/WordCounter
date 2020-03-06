@@ -24,11 +24,25 @@ namespace WordCounter.Models
         return true;
       }
     }
+
+    public bool CheckWordInstance(string word string sentence)
+    {
+      if (sentence.Contains(word))
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+
     public int SentenceWordCount(string word, string sentence)
     {
-      ,
+      
 
     }
+    
   }
 
 }    

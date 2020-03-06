@@ -17,11 +17,21 @@ namespace WordCounter.Test
     }
 
     [TestMethod]
-    public int SentenceWordCount_CountWordsInSentence_QuantityInt()
+    public void CheckWordInstance_VerifyAnyWordInstance_true()
     {
       WordCount newCount = new WordCount();
-      int count = newCount.SentenceWordCount("cat", "the cat in the cathedral")
-      Assert.AreEqual(1, count);
+      bool outcome = newCount.CheckWordInstance("word", "good wrord");
+      Assert.AreEqual(true, outcome);
     }
+
+
+
+    // [TestMethod]
+    // public int SentenceWordCount_CountWordsInSentence_QuantityInt()
+    // {
+    //   WordCount newCount = new WordCount();
+    //   int count = newCount.SentenceWordCount("cat", "the cat in the cathedral")
+    //   Assert.AreEqual(1, count);
+    // }
   }
 }
