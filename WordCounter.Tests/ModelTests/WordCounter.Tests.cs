@@ -20,7 +20,7 @@ namespace WordCounter.Test
     public void CheckWordInstance_VerifyAnyWordInstance_true()
     {
       WordCount newCount = new WordCount();
-      bool outcome = newCount.CheckWordInstance("word", "good wrord");
+      bool outcome = newCount.CheckWordInstance("word", "good wrdord");
       Assert.AreEqual(true, outcome);
     }
 

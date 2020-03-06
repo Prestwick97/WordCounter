@@ -25,7 +25,7 @@ namespace WordCounter.Models
       }
     }
 
-    public bool CheckWordInstance(string word string sentence)
+    public bool CheckWordInstance(string word, string sentence)
     {
       if (sentence.Contains(word))
       {
@@ -37,11 +37,11 @@ namespace WordCounter.Models
       }
     }
 
-    public int SentenceWordCount(string word, string sentence)
-    {
+    // public int SentenceWordCount(string word, string sentence)
+    // {
       
 
-    }
+    // }
     
   }
 
