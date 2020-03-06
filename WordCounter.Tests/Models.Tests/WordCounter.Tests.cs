@@ -9,6 +9,11 @@ namespace WordCounter.Test
   {
 
     [TestMethod]
-    public void LetterCheck_RecieveOnlyLetters_
+    public void LetterCheck_RecieveOnlyLetters_true()
+    {
+       WordCount newCount = new WordCount();
+            bool outcome = newCount.Lettercheck("word");
+            Assert.AreEqual(true, outcome);
+    }
   }
 }
