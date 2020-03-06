@@ -12,7 +12,7 @@ namespace WordCounter.Test
     public void LetterCheck_RecieveOnlyLetters_true()
     {
       WordCount newCount = new WordCount();
-      bool outcome = newCount.LetterCheck("wo23rd");
+      bool outcome = newCount.LetterCheck("word");
       Assert.AreEqual(true, outcome);
     }
   }
