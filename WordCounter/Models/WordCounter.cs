@@ -8,8 +8,8 @@ namespace WordCounter.Models
 
   public class WordCount
   {
-    public string InputWord {get; set;}
-    public string InputSentence {get; set;}
+    // public string InputWord {get; set;}
+    // public string InputSentence {get; set;}
  
 
     public bool LetterCheck(string input)
@@ -23,6 +23,10 @@ namespace WordCounter.Models
       {
         return true;
       }
+    }
+    public int SentenceWordCount(string word, string sentence)
+    {
+
     }
   }
 
