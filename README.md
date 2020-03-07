@@ -13,11 +13,11 @@ _This program will allow you to enter a sentence and a word. It then tells you h
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Make sure you have C# and Microsoft's .NET installed on your computer. As well as a text editor of your choice._
+* _Open your command terminal, navigate to the desktop directory: ```$ cd desktop```_
+* _Clone the remote repository for this program: ```git clone https://github.com/Prestwick97/WordCounter.git```_
+* _Navigate to the program's root diresctory and open the program in your text editor: ```cd Bakery```  -->  ```code . ```_
+* _use the ```dotnet run``` command in your terminal to begin._
 
 ## Specs:
 _Behavior: Program will only accent letters as input._
