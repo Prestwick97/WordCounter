@@ -10,7 +10,7 @@ namespace WordCounter.Models
 
   public class WordCount
   {
-    public List<string> dictionary = File.ReadAllLines("/Users/Guest/Desktop/Scrabble.Solution/newDictionary.txt").ToList();
+    public List<string> dictionary = File.ReadAllLines("/Users/Guest/Desktop/WordCounter.Solution/newDictionary.txt").ToList();
  
     public bool LetterCheck(string input)
     {

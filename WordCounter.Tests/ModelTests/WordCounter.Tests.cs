@@ -37,7 +37,7 @@ namespace WordCounter.Test
     {
       WordCount newCount = new WordCount();
       bool check = newCount.CheckWord("safe");
-      Assert.AreEqual(false, check);
+      Assert.AreEqual(true, check);
     }
   }
 }

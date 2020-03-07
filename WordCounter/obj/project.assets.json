@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/WordCounter/WordCounter/WordCounter.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "/Users/Guest/Desktop/WordCounter/WordCounter/WordCounter.csproj",
+      "projectPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/WordCounter/WordCounter/obj/",
+      "outputPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
