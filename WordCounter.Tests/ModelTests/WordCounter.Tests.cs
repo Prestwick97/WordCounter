@@ -25,7 +25,7 @@ namespace WordCounter.Test
     }
 
     [TestMethod]
-    public int SentenceWordCount_CountWordsInSentence_QuantityInt()
+    public void SentenceWordCount_CountWordsInSentence_QuantityInt()
     {
       WordCount newCount = new WordCount();
       int count = newCount.SentenceWordCount("cat", "the cat in the cathedral");
