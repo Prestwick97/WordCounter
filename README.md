@@ -16,12 +16,7 @@ _Behavior: Program allows user to input both a word and a sentence. Then counts 
 
 
 
-_Behavior:_
-* Input:
-  *
-* Output: 
-
-_Behavior:_
-* Input:
-  *
-* Output: 
+_Behavior: Program will check all words to verify if they are in the English dictionary._
+* Input: asdfasfd
+  * This input was chosen because it is not a word in the English dictionary.
+* Output: false.

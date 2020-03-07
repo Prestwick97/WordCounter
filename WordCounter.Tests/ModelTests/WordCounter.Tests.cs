@@ -31,5 +31,13 @@ namespace WordCounter.Test
       int count = newCount.SentenceWordCount("cat", "the cat in the cathedral");
       Assert.AreEqual(1, count);
     }
+
+    [TestMethod]
+    public void SentenceWordCount_CountWordsInSentence_QuantityInt()
+    {
+      WordCount newCount = new WordCount();
+      bool check = newCount.CheckWord("safe");
+      Assert.AreEqual(false, check);
+    }
   }
 }
