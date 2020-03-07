@@ -45,26 +45,22 @@ namespace WordCounter.Models
       List <string> words = new List<string> {};
       string[] sentenceArr = sentence.Split(' ');
       string[] wordArr = word.Split(' ');
-
-      for (int i = 0; i < sentenceArr.Length; i++)
-      {
-        if (sentenceArr[i].Equals(wordArr[0]))
-        {
-          words.Add(sentenceArr[i]);
-        }
-        else{
-          difWords.Add("");
-        }
-      }
-      Console.WriteLine("words in word count:" + words.Count());
-      Console.WriteLine("words in dif count:" + difWords.Count());
+      // for (int i = 0; i < sentenceArr.Length; i++)
+      // {
+      //   if (sentenceArr[i].Equals(wordArr[0]))
+      //   {
+      //     words.Add(sentenceArr[i]);
+      //     return 5;
+      //   }
+      //   else
+      //   {
+      //     difWords.Add("");
+      //     return 5;
+      //   }
+      // }
+      // Console.WriteLine("words in word count:" + words.Count());
+      // Console.WriteLine("words in dif count:" + difWords.Count());
       return words.Count();
-
-
-      // int count = sentenceArr.Count(word);
-      // Console.WriteLine(count);
-      
-
     }
     
   }
