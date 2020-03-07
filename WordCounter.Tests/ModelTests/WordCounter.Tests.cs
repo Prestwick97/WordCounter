@@ -24,14 +24,12 @@ namespace WordCounter.Test
       Assert.AreEqual(true, outcome);
     }
 
-
-
-    // [TestMethod]
-    // public int SentenceWordCount_CountWordsInSentence_QuantityInt()
-    // {
-    //   WordCount newCount = new WordCount();
-    //   int count = newCount.SentenceWordCount("cat", "the cat in the cathedral");
-    //   Assert.AreEqual(1, count);
-    // }
+    [TestMethod]
+    public int SentenceWordCount_CountWordsInSentence_QuantityInt()
+    {
+      WordCount newCount = new WordCount();
+      int count = newCount.SentenceWordCount("cat", "the cat in the cathedral");
+      Assert.AreEqual(1, count);
+    }
   }
 }

@@ -39,22 +39,26 @@ namespace WordCounter.Models
     }
 
 
-    public void SentenceWordCount(string word, string sentence)
+    public int SentenceWordCount(string word, string sentence)
     {
+      List <string> difWords = new List<string> {};
       List <string> words = new List<string> {};
       string[] sentenceArr = sentence.Split(' ');
+      string[] wordArr = word.Split(' ');
 
-      for (var i = 0; i < sentenceArr.Length; i++)
+      for (int i = 0; i < sentenceArr.Length; i++)
       {
-        if (sentenceArr[i] == word)
+        if (sentenceArr[i].Equals(wordArr[0]))
         {
           words.Add(sentenceArr[i]);
         }
         else{
-          words.Add("");
+          difWords.Add("");
         }
       }
-      Console.WriteLine(words.Count());
+      Console.WriteLine("words in word count:" + words.Count());
+      Console.WriteLine("words in dif count:" + difWords.Count());
+      return words.Count();
 
 
       // int count = sentenceArr.Count(word);
@@ -66,3 +70,29 @@ namespace WordCounter.Models
   }
 
 }    
+// public int SentenceWordCount(string word, string sentence)
+//     {
+//       List <string> words = new List<string> {};
+//       string[] sentenceArr = sentence.Split(' ');
+
+//       for (int i = 0; i < sentenceArr.Length; i++)
+//       {
+//         if (sentenceArr[i] == word)
+//         {
+//           words.Add(sentenceArr[i]);
+//         }
+//         else{
+//           words.Add("");
+//           return words.Count();
+//         }
+//       }
+//       Console.WriteLine(words.Count());
+//       Console.WriteLine(sentenceArr.ToString());
+//       return words.Count();
+
+
+//       // int count = sentenceArr.Count(word);
+//       // Console.WriteLine(count);
+      
+
+//     }
