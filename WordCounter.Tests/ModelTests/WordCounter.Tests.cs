@@ -33,7 +33,7 @@ namespace WordCounter.Test
     }
 
     [TestMethod]
-    public void SentenceWordCount_CountWordsInSentence_QuantityInt()
+    public void CheckWord_CheckWordInEnglishDictionary_true()
     {
       WordCount newCount = new WordCount();
       bool check = newCount.CheckWord("safe");
