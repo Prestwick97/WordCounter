@@ -1,3 +1,24 @@
+
+
+
+# _WordCounter_
+
+#### _A program that counts words, March 2020_
+
+#### By _**Patrick S. Delaney**_
+
+## Description
+
+_This program will allow you to enter a sentence and a word. It then tells you how many times that word occurs in the sentence entered._
+
+## Setup/Installation Requirements
+
+* _This is a great place_
+* _to list setup instructions_
+* _in a simple_
+* _easy-to-understand_
+* _format_
+
 ## Specs:
 _Behavior: Program will only accent letters as input._
 * Input: 3
@@ -20,3 +41,24 @@ _Behavior: Program will check all words to verify if they are in the English dic
 * Input: asdfasfd
   * This input was chosen because it is not a word in the English dictionary.
 * Output: false.
+
+## Known Bugs
+
+_At the moment, there are no known bugs._
+
+## Support and contact details
+
+_If you have any questions, comments, concerns, or suggestions, please contact me at prestwick97@gmail.com_
+
+## Technologies Used
+
+* _C#_
+* _.NET_
+* _VS code_
+* _Command Terminal_
+
+### License
+
+* This application is licensed under the MIT open source license. *
+
+Copyright (c) 2020 **_Patrick Delaney_**
