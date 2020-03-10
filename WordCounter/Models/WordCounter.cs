@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
-using System.Text.RegularExpressions;
 
 
 namespace WordCounter.Models
@@ -10,7 +9,7 @@ namespace WordCounter.Models
 
   public class WordCount
   {
-    // public List<string> dictionary = File.ReadAllLines("/Users/Guest/Desktop/WordCounter.Solution/newDictionary.txt").ToList();
+    public List<string> dictionary = File.ReadAllLines("/Users/Guest/Desktop/WordCounter.Solution/newDictionary.txt").ToList();
  
     public bool LetterCheck(string input)
     {
@@ -28,11 +27,11 @@ namespace WordCounter.Models
       }
     }
     
-    // public bool CheckWord(string word)
-    // {
-    //   bool englishWord = dictionary.Contains(word);
-    //   return englishWord;
-    // }
+    public bool CheckWord(string word)
+    {
+      bool englishWord = dictionary.Contains(word);
+      return englishWord;
+    }
 
     public bool CheckWordInstance(string word, string sentence)
     {
