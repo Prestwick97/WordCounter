@@ -10,26 +10,29 @@ namespace WordCounter.Models
 
   public class WordCount
   {
-    public List<string> dictionary = File.ReadAllLines("/Users/Guest/Desktop/WordCounter.Solution/newDictionary.txt").ToList();
+    // public List<string> dictionary = File.ReadAllLines("/Users/Guest/Desktop/WordCounter.Solution/newDictionary.txt").ToList();
  
     public bool LetterCheck(string input)
     {
-      bool outcome = Regex.IsMatch(input, @"^[a-zA-Z]+$");
+      input = input.Replace(" ", String.Empty);
+      bool outcome = input.All(Char.IsLetter);
       if (outcome == false)
       {
+        Console.WriteLine("contains non-letters");
         return false;
       }
       else
       {
+        Console.WriteLine("all letters");
         return true;
       }
     }
     
-    public bool CheckWord(string word)
-    {
-      bool englishWord = dictionary.Contains(word);
-      return englishWord;
-    }
+    // public bool CheckWord(string word)
+    // {
+    //   bool englishWord = dictionary.Contains(word);
+    //   return englishWord;
+    // }
 
     public bool CheckWordInstance(string word, string sentence)
     {

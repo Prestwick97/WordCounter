@@ -13,7 +13,10 @@ class Program
     Console.WriteLine("Please enter a sentence containg instances of the previously entered word");
     string sentence = Console.ReadLine();
     WordCount newCount = new WordCount();
+    newCount.LetterCheck(word);
+    newCount.LetterCheck(sentence);
     newCount.SentenceWordCount(word, sentence);
+
 
   }
 }
