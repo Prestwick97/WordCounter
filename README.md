@@ -20,15 +20,25 @@ _This program will allow you to enter a sentence and a word. It then tells you h
 * _use the ```dotnet run``` command in your terminal to begin._
 
 ## Specs:
-_Behavior: Program will only accent letters as input._
+_Behavior: Program will only accept letters as input._
 * Input: 3
   * 3 was chosen as simplist input to check behavior because it is a single digit number, and not a letter.
 * Output: "Please only enter words consisting of letters into the program."
+
+_Behavior: Program will check all words to verify if they are in the English dictionary._
+* Input: asdfasfd
+  * This input was chosen because it is not a word in the English dictionary.
+* Output: false.
 
 _Behavior: Program checks to see if there is any instance of a word in a sentence._
 * Input: cat, the fat cat loves hats.
   * This input was chosen because the sentence has one instance of the word "cat" in a sentence.
 * Output: true
+
+_Behavior: Program differentiates between individual and 'nested' words._
+* Input: cat, the man in the cathedral.
+  * This input was chosen because "cathedral" contains the correct spelling for the word "cat", but that doesn't mean it contains the word: "cat".
+* Output: 0  (0 instances of 'cat')
 
 _Behavior: Program allows user to input both a word and a sentence. Then counts how many times that word appears in the sentence._
 * Input: apple, the apple doesn't fall far from the apple tree.
@@ -37,10 +47,6 @@ _Behavior: Program allows user to input both a word and a sentence. Then counts 
 
 
 
-_Behavior: Program will check all words to verify if they are in the English dictionary._
-* Input: asdfasfd
-  * This input was chosen because it is not a word in the English dictionary.
-* Output: false.
 
 ## Known Bugs
 
